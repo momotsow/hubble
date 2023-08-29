@@ -1,11 +1,11 @@
-/* Banner */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --primary: #ff5a5f;
-  --hoverprimary: #b64a4d;
+  --red: #ff5a5f;
+  --hoverRed: #b64a4d;
   --black: #111;
   --main-white: #fff;
+  --main-font: 'CircularStd';
 }
   
 * {
@@ -23,11 +23,7 @@ p {
 }
 
 p, h1 {
-    font-family: sans-serif, Arial;
-}
-
-a {
-  text-decoration: none;
+    font-family: 'Poppins','sans-serif';
 }
 
 h1 {
@@ -66,7 +62,7 @@ h1 {
 }
 
 .monolith {
-    color: var(--primary);
+    color: var(--red);
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -76,35 +72,33 @@ h1 {
   font-size: 14px;
 }
 
-.btn {
-  text-transform: uppercase;
+.request-demo {
+  border-radius: 50px;
+  background-color: var(--red);
   font-weight: 700;
-  border-radius: 30px;
   padding: 15px 30px;
-}
-.primary-btn {
-  background-color: var(--primary);
   margin-right: 50px;
   margin-bottom: 20px;
-  border: 1px solid var(--primary);
 }
 
-.primary-btn:hover {
-  background: var(--hoverprimary);
+.request-demo:hover {
+  background: var(--hoverRed);
   color: #fff;
   transition: background 500ms;
 }
 
-.secondary-btn {
-  border: 3px solid var(--primary);
-  background: transparent;
+.speak-to-team {
+  border: 2px solid var(--red);
+  border-radius: 50px;
+  font-weight: 700;
+  padding: 15px 30px;
 }
 
-.secondary-btn:hover {
-  background: var(--primary);
+.speak-to-team:hover {
+  background: var(--red);
+  border: none;
   color: #fff;
   transition: background 500ms;
-  border: 1px solid var(--primary);
 }
 
 /* Slideshow */
@@ -140,11 +134,6 @@ h1 {
 
 .inner-carousel:hover {
   animation-play-state: paused;
-}
-
- .item:hover{
-  animation-play-state: paused;
-  opacity: 0.5;
 }
 
 @keyframes marquee {
