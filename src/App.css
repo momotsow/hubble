@@ -1,13 +1,3 @@
-/* Banner */
-
-
-:root {
-  --primary: #ff5a5f;
-  --hoverprimary: #b64a4d;
-  --black: #111;
-  --main-white: #fff;
-}
-  
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +6,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -30,163 +21,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 48px;
-}
-
-.text-container {
-  padding: 120px 60px 0 60px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.content {
-  max-width: 80vw;
-}
-
-.overlay {
-  width: 100vw;
-  background: black;
-  overflow: hidden;
-}
-
-.background-img {
-  background-image: url(https://www.monolithai.com/hubfs/Group_39403_min.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  opacity: 0.4;
-}
-
-.text {
-    color: var(--main-white);
-}
-
-.monolith {
-    color: var(--primary);
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.paragraph {
-  margin-bottom: 40px;
-  font-size: 14px;
-}
-
-.btn {
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 30px;
-  padding: 15px 30px;
-}
-.primary-btn {
-  background-color: var(--primary);
-  margin-right: 50px;
-  margin-bottom: 20px;
-  border: 1px solid var(--primary);
-}
-
-.primary-btn:hover {
-  background: var(--hoverprimary);
-  color: #fff;
-  transition: background 500ms;
-}
-
-.secondary-btn {
-  border: 3px solid var(--primary);
-  background: transparent;
-}
-
-.secondary-btn:hover {
-  background: var(--primary);
-  color: #fff;
-  transition: background 500ms;
-  border: 1px solid var(--primary);
-}
-
-/* Slideshow */
-
-.carousel {
-  cursor: grab;
-  margin-top: 60px;
-  overflow: hidden;
-  margin-left: 30px;
-  margin-right: 30px;
-  position: relative;
-}
-
-.inner-carousel {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    position: relative;
-    animation: marquee 15s linear infinite;
-}
-
-.item {
-  padding: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
-  position: relative;
-}
-
-.item img {
-  width: 120px;
-  height: 100%;
-}
-
-.inner-carousel:hover {
-  animation-play-state: paused;
-}
-
- .item:hover{
-  animation-play-state: paused;
-  opacity: 0.5;
-}
-
-@keyframes marquee {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 64px;
-  }
-
-  .content {
-    max-width: 55vw;
-  }
-
-  .text-container {
-    padding: 120px 80px 0 80px;
-  }
-  
-  .request-demo {
-    margin-bottom: 0;
-  }
-
-  .carousel {
-    margin-top: 90px;
-  }
-
-  .paragraph {
-    font-size: 16px;
-  }
-
-  .item {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .item img {
-    width: 150px;
-  }
+ul li {
+  list-style: none;
 }
