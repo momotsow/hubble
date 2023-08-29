@@ -1,4 +1,5 @@
 import React from 'react'
+import './banner.css';
 
 const logos = [
   'https://www.monolithai.com/hs-fs/hubfs/honeywell-1-logo-black-and-white.png?width=193&height=36&name=honeywell-1-logo-black-and-white.png',
@@ -36,7 +37,7 @@ export const Banner = () => {
             <p className='monolith'>Monolith</p>
             <h1>Use AI software to test less and learn more.</h1>
             <p className='paragraph'>Spend less time running expensive, repetitive tests and more time learning from your engineering data to predict the exact tests to run.</p>
-            <div>
+            <div className='banner-btn'>
               <a href='https://www.monolithai.com/hubfs' className="primary-btn btn text">REQUEST DEMO</a>
               <a href='https://www.monolithai.com/hubfs' className="secondary-btn btn text">SPEAK TO OUR TEAM</a>
             </div>

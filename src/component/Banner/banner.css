@@ -1,31 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* Banner */
+
 
 :root {
-  --red: #ff5a5f;
-  --hoverRed: #b64a4d;
+  --primary: #ff5a5f;
+  --hoverprimary: #b64a4d;
   --black: #111;
   --main-white: #fff;
-  --main-font: 'CircularStd';
 }
   
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-p, h1 {
-    font-family: 'Poppins','sans-serif';
-}
-
 h1 {
   font-size: 48px;
 }
@@ -62,7 +44,7 @@ h1 {
 }
 
 .monolith {
-    color: var(--red);
+    color: var(--primary);
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -72,33 +54,40 @@ h1 {
   font-size: 14px;
 }
 
-.request-demo {
-  border-radius: 50px;
-  background-color: var(--red);
+.banner-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  text-transform: uppercase;
   font-weight: 700;
+  border-radius: 30px;
   padding: 15px 30px;
+}
+.primary-btn {
+  background-color: var(--primary);
   margin-right: 50px;
   margin-bottom: 20px;
+  border: 1px solid var(--primary);
 }
 
-.request-demo:hover {
-  background: var(--hoverRed);
+.primary-btn:hover {
+  background: var(--hoverprimary);
   color: #fff;
   transition: background 500ms;
 }
 
-.speak-to-team {
-  border: 2px solid var(--red);
-  border-radius: 50px;
-  font-weight: 700;
-  padding: 15px 30px;
+.secondary-btn {
+  border: 3px solid var(--primary);
+  background: transparent;
 }
 
-.speak-to-team:hover {
-  background: var(--red);
-  border: none;
+.secondary-btn:hover {
+  background: var(--primary);
   color: #fff;
   transition: background 500ms;
+  border: 1px solid var(--primary);
 }
 
 /* Slideshow */
@@ -136,6 +125,11 @@ h1 {
   animation-play-state: paused;
 }
 
+ .item:hover{
+  animation-play-state: paused;
+  opacity: 0.5;
+}
+
 @keyframes marquee {
   from {
     transform: translate3d(0, 0, 0);
@@ -152,10 +146,27 @@ h1 {
 
   .content {
     max-width: 55vw;
+    margin-top: 5rem;
+
   }
 
   .text-container {
     padding: 120px 80px 0 80px;
+  }
+
+  .banner-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+
+  }
+
+  .primary-btn {
+    margin-bottom: 0px;
+
   }
   
   .request-demo {
@@ -163,7 +174,7 @@ h1 {
   }
 
   .carousel {
-    margin-top: 90px;
+    margin-top: 120px;
   }
 
   .paragraph {
