@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/huble/static/css/main.c8fb9184.css",
+    "main.js": "/huble/static/js/main.2b838b8d.js",
+    "static/js/787.c41a2298.chunk.js": "/huble/static/js/787.c41a2298.chunk.js",
+    "index.html": "/huble/index.html",
+    "main.c8fb9184.css.map": "/huble/static/css/main.c8fb9184.css.map",
+    "main.2b838b8d.js.map": "/huble/static/js/main.2b838b8d.js.map",
+    "787.c41a2298.chunk.js.map": "/huble/static/js/787.c41a2298.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8fb9184.css",
+    "static/js/main.2b838b8d.js"
+  ]
+}
