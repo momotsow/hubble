@@ -7,9 +7,8 @@ function App() {
   return (
     <div className="">
       <Routes>
-        <Route path="/" element={<Banner />} />
-        <Route path="/banner" element={<Banner />} />
-        <Route path="/accordion" element={<AccordionSection />} />
+        <Route path="/huble/banner" element={<Banner />} />
+        <Route path="/huble/accordion" element={<AccordionSection />} />
       </Routes>
     </div>
   );
