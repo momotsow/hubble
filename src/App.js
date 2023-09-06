@@ -6,7 +6,7 @@ import AccordionSection from './component/Accordion/Accordion';
 
 const App  = createBrowserRouter([ 
   {
-    path: "/huble/banner",
+    path: "/huble/",
     element: <div><Banner /></div>,
   },
   {
