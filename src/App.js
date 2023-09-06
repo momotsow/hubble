@@ -6,11 +6,11 @@ import AccordionSection from './component/Accordion/Accordion';
 
 const App  = createBrowserRouter([ 
   {
-    path: "/huble/banner",
+    path: "/banner",
     element: <div><Banner /></div>,
   },
   {
-    path: "/huble/accordion",
+    path: "/accordion",
     element: <div><AccordionSection /></div>,
   },
 ]);
